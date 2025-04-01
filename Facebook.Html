@@ -5,31 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook Practice</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="General.CSS">
 </head>
 <body>
 
-  <!--Box to contain email, password, login and create account buttons-->
-  <div class="login-box">
+  <!--Container to center login box on screen-->
+  <div class="container">
 
-    <div class="info-box">
+    <!--Facebook logo-->
+    <div class="logo">
 
-      <!--Email and password text boxes-->
-      <input class="info" type="text" placeholder="Email address or phone number">
-      <input class="info" type="text" placeholder="Password">
-  
-      <!--Login button-->
-      <button class="login-btn">Log In</button>
-  
-      <!--Forgot password button-->
-      <a class="forgot-password" href="">Forgotten Password</a>
-  
+      <img class="logo-img" src="Icons/4lCu2zih0ca.svg" alt="">
+
     </div>
 
-    <!--Creat account box-->
-    <div class="create-account">
+    <!--Box to contain email, password, login and create account buttons-->
+    <div class="login-box">
 
-      <!--Create account button-->
-      <button class="create-account-btn">Create New Account</button>
+      <!--Box for email password login and forgot password-->
+      <div class="info-box">
+
+        <!--Email and password text boxes-->
+        <p>Log into Facebook</p>
+        <input class="info" type="text" placeholder="Email or phone number">
+        <input class="info" type="text" placeholder="Password">
+    
+        <!--Login button-->
+        <button class="login-btn">Log In</button>
+    
+        <!--Forgot password button-->
+        <a class="forgot-password" href="">Forgot account?</a>
+    
+      </div>
+
+      <!--Creat account box-->
+      <div class="create-account">
+
+        <!--Create account button-->
+        <button class="create-account-btn">Create new account</button>
+
+      </div>
 
     </div>
 

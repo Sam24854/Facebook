@@ -1,13 +1,21 @@
-.login-box{
-  background-color: lightsalmon;
+.container{
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box{
+  display: inline-block;
+  padding: 5px 15px 20px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1),
+  0 8px 16px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  background-color: white;
 }
 
 .info-box{
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,24 +26,63 @@
 
 .info{
   width: 250px;
-  padding: 5px 10px;
-  border: none;
+  padding: 10px 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
   outline: none;
   margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .login-btn{
   width: 270px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 4px;
+}
+
+.login-btn:hover{
+  background-color: #1569d8;
 }
 
 .forgot-password{
   text-decoration: none;
+  color: #1877f2;
+  font-size: 12px;
 }
 
 .create-account{
-  background-color: lightpink;
   display: flex;
-  align-items: center;
   justify-content: center;
+  border-top: 1px solid gray;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.create-account-btn{
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.create-account-btn:hover{
+  background-color: #40a82b;
+}
+
+.login-btn, .create-account-btn{
+  cursor: pointer;
+  transition: background-color .15s;
+}
+
+.logo-img{
+  height: 75px;
 }
